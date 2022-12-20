@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+body {
+    background: #151b25;
+    font-family: "PT Sans Narrow";
+    color: white;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar { 
+    display: none;
+}
+
+#richardlin {
+    margin-top: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: 500;
+}
+
+#all {
+    width: 1200px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#bottom {
+    height: 700px;
+    transition: 2s;
+}
+
+.primary {
+    height: 600px;
+    width: 1000px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 35px;
+}
+
+.primary, .name, #all {
+    transition: 0.4s;
+}
+
+
+#healthymind {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(31, 98, 170, 0.6)), url(https://myhealthymind.github.io/images/unsplash-hike.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#fluorescence {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(31, 98, 170, 0.6)), url(https://fluorescencetsa.github.io/images/balloons.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#epanos {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(31, 98, 170, 0.6)), url(https://epanostsa.github.io/images/homebackground.png);
+    background-size: cover;
+    background-position: center;
+
+}
+#websymphonies {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(31, 98, 170, 0.6)), url(https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&);
+    background-size: cover;
+    background-position: center;
+}
+
