@@ -31,15 +31,128 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 55vh;
     background-position: center;
-    background-size: 150% 250%;
+    background-size: cover;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding-top: 300px;
+    margin-bottom: 200px;
+    transition: 0.4s;
 }
 #pagetitle {
     font-size: 60px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 20px;
+}
+#back {
+    position: fixed;
+    font-size: 50px;
+    user-select: none;
+    left: 70px;
+    top: 50px;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    border: 3px solid transparent;
+    background: transparent;
+    transition: 0.4s;
+}
+#pagesub {
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 565px;
+}
+#back:hover {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+    color: rgb(170, 225, 255);
+}
+
+#bottom {
+    height: 200px;
+}
+
+#preview, #preview1, #preview2, #preview3, #preview4, #preview5 {
+    width: 1000px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    
+}
+#preview {
+    background: url('./images/hm1.png');
+    background-repeat: none;
+    background-size: 1000px 500px;
+    background-position: center;
+}
+#preview1 {
+    background: url('./images/hm2.png');
+    background-repeat: none;
+    height: 550px;
+    background-size: 1000px 550px;
+    background-position: center;
+}
+#preview2 {
+    background: url('./images/hm3.png');
+    background-repeat: none;
+    height: 550px;
+    background-size: 1000px 550px;
+    background-position: center;
+}
+#preview3 {
+    background: url('./images/hm4.png');
+    background-repeat: none;
+    height: 550px;
+    background-size: 1000px 550px;
+    background-position: center;
+}
+#preview4 {
+    background: url('./images/hm5.png');
+    background-repeat: none;
+    height: 550px;
+    background-size: 1000px 550px;
+    background-position: top center;
+}
+#preview5 {
+    background: url('./images/hm6.png');
+    background-repeat: none;
+    height: 325px;
+    background-size: 1000px 325px;
+    background-position: center;
+}
+
+#scrolltop {
+    position: fixed;
+    right: 100px;
+    z-index: 100;
+    font-size: 50px;
+    transform: rotate(-90deg);
+    bottom: 100px;
+    transition: 0.4s;
+    user-select: none;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    border: 3px solid transparent;
+    background: transparent;
+    transition: 0.4s;
+}
+#scrolltop:hover {
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    cursor: pointer;
+    color: rgb(170, 225, 255);
 }
