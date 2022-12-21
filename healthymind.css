@@ -14,6 +14,17 @@ body {
 body::-webkit-scrollbar { 
     display: none;
 }
+#bg {
+    position: fixed; 
+    background-color: rgb(18, 25, 35);
+    height: 110vh;
+    margin-top: -100px;
+    width: 100%;
+    opacity: 1;
+    pointer-events: none;
+    transition: 1s;
+    z-index: 90000;
+  }
 
 #pagemain {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(31, 98, 170, 0.6)), url(https://myhealthymind.github.io/images/unsplash-hike.jpg);

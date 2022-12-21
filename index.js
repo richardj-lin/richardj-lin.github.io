@@ -1,20 +1,3 @@
-function disableScrolling(){
-    var x=window.scrollX;
-    var y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
-}
-
-function enableScrolling(){
-    window.onscroll=function(){};
-}
-
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 var decrease = setInterval(function () {
     if (window.scrollY > 50 && window.scrollY < 450) {
         document.getElementById("healthymind").style = "width: 300px; height: 400px;"; 
@@ -80,6 +63,7 @@ var decrease = setInterval(function () {
                     enableScrolling();
                     document.getElementById("healthymind").onclick = function() {
                         document.getElementById("healthymind").style = "position: absolute; width: 100%; height: 100%; margin-top: -100px";
+                        document.getElementById("bg").style = "opacity: 1"
                         sleep(1000).then(() => {
                             location.href = "./healthymind.html";
                         });
