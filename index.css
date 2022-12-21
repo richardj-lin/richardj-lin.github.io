@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@400;600;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins&display=swap');
 body {
     background: #151b25;
     font-family: "PT Sans Narrow";
@@ -21,19 +21,19 @@ body::-webkit-scrollbar {
 }
 
 #all {
-    width: 1200px;
+    width: 1000px;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: 2s;
 }
 
 #bottom {
-    height: 700px;
-    transition: 2s;
+    height: 200px;
+    transition: 1s;
 }
 
 .primary {
@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
     letter-spacing: 35px;
 }
 
-.primary, .name, #all {
+.primary, .name {
     transition: 0.4s;
 }
 
