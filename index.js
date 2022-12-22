@@ -23,7 +23,7 @@ var decrease = setInterval(function () {
         document.getElementById("fluorescence-name").style = "letter-spacing: 35px; font-size: 50px; color: white;";
     }
 
-    if (window.scrollY > 900 && window.scrollY < 1200) {
+    if (window.scrollY > 900 && window.scrollY < 1500) {
         epanos.style = "width: 300px; height: 400px;"; 
         document.getElementById("epanos-name").style = "letter-spacing: 0px; font-size: 0px; color: transparent;";
         
@@ -33,12 +33,12 @@ var decrease = setInterval(function () {
         document.getElementById("epanos-name").style = "letter-spacing: 35px; font-size: 50px; color: white;";
     }
 
-    if (window.scrollY > 1200) {
+    if (window.scrollY > 1500) {
         websymphonies.style = "width: 100px; height: 150px;"; 
         document.getElementById("websymphonies-name").style = "letter-spacing: 0px; font-size: 0px; color: transparent;";
         
     }
-    if (window.scrollY < 1200 && window.scrollY > 900) {
+    if (window.scrollY < 1500 && window.scrollY > 900) {
         websymphonies.style = "width: 1000px; height: 600px;"; 
         document.getElementById("websymphonies-name").style = "letter-spacing: 35px; font-size: 50px; color: white;";
     }
