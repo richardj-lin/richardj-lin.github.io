@@ -46,6 +46,7 @@ var decrease = setInterval(function () {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         disableScrolling();
         clearInterval(decrease);
+        document.getElementById("richardlin").innerText = "Websites";
         document.getElementById("healthymind-name").style = "letter-spacing: 0px; font-size: 0px; color: transparent;";
         document.getElementById("fluorescence-name").style = "letter-spacing: 0px; font-size: 0px; color: transparent;";
         document.getElementById("epanos-name").style = "letter-spacing: 0px; font-size: 0px; color: transparent;";
@@ -116,7 +117,7 @@ var decrease = setInterval(function () {
                     epanos.onclick = function() {
                         document.getElementById("bg").style = "opacity: 1"
                         sleep(1000).then(() => {
-                            location.href = "./healthymind.html";
+                            location.href = "./epanos.html";
                         });
                     }   
                 };
@@ -129,7 +130,7 @@ var decrease = setInterval(function () {
                     websymphonies.onclick = function() {
                         document.getElementById("bg").style = "opacity: 1"
                         sleep(1000).then(() => {
-                            location.href = "./healthymind.html";
+                            location.href = "./websymphonies.html";
                         });
                     }   
                 };
