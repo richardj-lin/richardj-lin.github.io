@@ -1,35 +1,87 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Richard Lin Design</title>
-    <link rel='icon' href="./images/tab.png">
-    <link rel = "stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-</head>
-<body>
-    <div id="bg"></div>
-    <p id="richardlin">Richard Lin</p>
-    <div id="all">
-        <div class="primary" id="healthymind">
-            <p class="name" id="healthymind-name">Healthy Mind</p>
-        </div>
-        <div class="primary" id="fluorescence">
-            <p class="name" id="fluorescence-name">Fluorescence TSA</p>
-        </div>
-        <div class="primary" id="epanos">
-            <p class="name" id="epanos-name">Epanos TSA</p>
-        </div>
-        <div class="primary" id="websymphonies">
-            <p class="name" id="websymphonies-name">Web Symphonies</p>
+    <head>
+        <title>LIN - Index</title>
+        <link rel='icon' href="./images/circlelogo.png">
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    </head>
+    <body>
+        <img src="./images/pfp.png" id="gradient1">
+        <img src="./images/pfp.png" id="gradient">
+        <div id="landing">
+            <div id="landing-left">
+                <p class="text" id="topname">Hello. I'm</p>
+                <p id="name">RICHARD<br>LIN,</p>
+                <p class="text"id="bottomname">a UX/UI Designer.</p>
+                <div id="socials">
+                    <img id="email" src="./images/email.png">
+                    <img id="linkedin" src="./images/linkedin.png">
+                </div>
+            </div>
+            <div id="landing-mid">
+                <button id="scrolldown" onclick="scrollAbout()">></button>
+            </div>
+            <div id="landing-right">
+                <div id="landing-right-content">
+                    <div id="landing-rtop">
+                        <div class="bar" id="bar1"></div>
+                        <div class="bar" id="bar2"></div>
+                    </div>
+                    <div id="landing-rmid">
+                        <button id="indexbutton">INDEX</button><br>
+                        <button id="aboutbutton" onclick="scrollAbout()">ABOUT</button><br>
+                        <button id="workbutton" onclick="scrollWork()">WORK</button>
+                    </div>
+                    <div id="landing-rbot">
+                        <div class="bar" id="bar3"></div>
+                        <div class="bar" id="bar4"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
-    <div id="bottom"></div>
-    
-<script src="index.js"></script>
-<script src="universal.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-</body>
+        <div id="about">
+            <div id="about-left"></div>
+            <div id="about-content">
+                <p id="aboutme">ABOUT ME</p>
+                <p class="text" id="about-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                <div id="workline"></div>
+            </div>
+        </div>
 
+        <div id="work">
+            <div id="work-left">
+                <img id="work-img" src="https://youthhealthymind.com/images/unsplash-hike.jpg">
+            </div>
+            <div id="work-right">
+                <p id="mywork">MY WORK</p>
+                <div class="link" id="link1">
+                    <p class="linktext" id="linktext1">YouthHealthyMind</p>
+                    <p class="linkarrow" id="linkarrow1">></p>
+                </div>
+                <div class="link" id="link2">
+                    <p class="linktext" id="linktext2">Cans For Kids NC</p>
+                    <p class="linkarrow" id="linkarrow2">></p>
+                </div>
+                <div class="link" id="link3">
+                    <p class="linktext" id="linktext3">TSA Pulsar</p>
+                    <p class="linkarrow" id="linkarrow3">></p>
+                </div>
+                <div class="link" id="link4">
+                    <p class="linktext" id="linktext4">TSA Fluorescence</p>
+                    <p class="linkarrow" id="linkarrow4">></p>
+                </div>
+                <div class="link" id="link5">
+                    <p class="linktext" id="linktext5">TSA Epanos</p>
+                    <p class="linkarrow" id="linkarrow5">></p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="./js/index.js"></script>
+    <script src="./js/universal.js"></script>
 </html>

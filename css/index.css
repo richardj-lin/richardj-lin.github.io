@@ -1,0 +1,280 @@
+#gradient1 {
+    position: absolute;
+    object-fit: cover;
+    object-position: center -500px;
+    filter:blur(200px) brightness(70%) saturate(300%);
+    width: 100%;
+    height: 100%;
+    transform: rotate(435deg);
+    z-index:0;
+    animation: bgmove1 9s infinite;
+}
+@keyframes bgmove1 {
+    0% {transform: rotate(435deg);}
+    100% {transform: rotate(75deg);}
+}
+
+#gradient {
+    position: absolute;
+    object-fit: cover;
+    object-position: center -500px;
+    filter:blur(200px) brightness(70%) saturate(300%);
+    width: 100%;
+    height: 100%;
+    z-index:0;
+    animation: bgmove 15s infinite;
+}
+@keyframes bgmove {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#landing {   
+    border-top: 2px solid white;
+    background: transparent;
+    width: 90%;
+    height: 85vh;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
+#landing-left, #landing-right {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid white;
+}
+
+.text {
+    font-family: "Alata";
+    color: var(--text); 
+    font-size: 30px;
+}
+#topname, #bottomname {
+    padding-left: 57px;
+}
+#name {
+    margin: 0;
+    margin-left: 50px;
+    font-family: "Rozha One";
+    color: white;
+    font-size: 200px;
+    line-height: 125px;
+    height: 250px;
+}
+#socials {
+    margin-left: 50px;
+}
+#email, #linkedin {
+    width: 50px;
+    filter: invert();
+    height: auto;
+}
+#linkedin {
+    margin-left: 5px;
+}
+
+#landing-mid {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#scrolldown {
+    font-family: "Andada Pro";
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background: transparent;
+    transform: rotate(90deg);
+    color: white;
+    font-size: 30px;
+    padding-bottom: 6px;
+    padding-left: 9px;
+    transition: 0.2s;
+}
+#scrolldown:hover {
+    background: white;
+    color: var(--bg);
+    cursor: pointer;
+}
+
+#landing-right {
+    flex-direction: column;
+    align-items: end;
+}
+#landing-right-content {
+    width: 200px;
+    height: 100%;
+}
+#landing-rtop, #landing-rbot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 35%;
+}
+#landing-rmid {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bar {
+    width: 100px;
+    height: 100%;
+    border: 2px solid white;
+    border-top: none;
+    border-bottom: none;
+}
+#bar1, #bar3 {
+    border-left: none;
+}
+
+#bar2, #bar4 {
+    border: none;
+}
+
+#indexbutton, #aboutbutton, #workbutton {
+    font-family: "Rozha One";
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    transition: 0.2s;
+}
+#indexbutton:hover, #aboutbutton:hover, #workbutton:hover {
+    color: var(--text);
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+
+#about{
+    height: 550px;
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: end;
+}
+#about-left {
+    width: 100px;
+    height: 550px;
+    border-right: 2px solid white;
+}
+#about-content {
+    width: 80%;
+
+}
+#aboutme {
+    font-family: "Rozha One";
+    color: white;
+    font-size: 75px;
+    padding-left: 100px;
+}
+#about-text {
+    margin-top: -50px;
+    padding-left: 100px;
+}
+
+#workline {
+    width: 800px;
+    border-top: 2px solid white;
+    margin-top: 100px;
+    height: 100px;
+}
+
+#work {
+    height: 650px;
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1000px;
+}
+
+#work-left {
+    border-right: 2px solid white;
+    padding-left: 125px;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+#work-right {
+
+}
+
+#work-img {
+    width: 450px;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+}
+#work-right {
+    width: 50%;
+    padding-left: 50px;
+}
+
+#mywork {
+    font-family: "Rozha One";
+    color: white;
+    font-size: 100px;
+    height: 50px;
+    margin-top: 0px;
+}
+
+.link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: "Alata";
+    font-size: 30px;
+    height: 70px;
+    transition: 0.2s;
+}
+.linktext {
+    background: linear-gradient( to right, var(--dtext), var(--dtext), var(--o), var(--p));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    transition: 0.3s;
+}
+.linkarrow {
+    font-family: "Andada Pro";
+    margin-left: 10px;
+    color: var(--dtext);
+    transition: 0.2s;
+}
+
+.link:hover .linktext {
+    background-position: top left 100%;
+    cursor: pointer;
+}
+.link:hover {
+    cursor: pointer;
+}
+.link:hover .linkarrow {
+    color: white;
+}
+
+
+
+
+
