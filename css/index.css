@@ -76,9 +76,29 @@
     width: 50px;
     filter: invert();
     height: auto;
+    position: relative;
+    z-index: 2;
 }
 #linkedin {
     margin-left: 5px;
+}
+#emails {
+    position: absolute;
+    font-family: "Alata";
+    color: var(--text);
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: -30px;
+    opacity: 0%;
+    transition: 0.2s;
+    z-index: 0;
+}
+#email:hover + #emails {
+    margin-top: 0;
+    opacity: 100%;
+}
+#email:hover, #linkedin:hover {
+    cursor: pointer;
 }
 
 #landing-mid {
@@ -86,6 +106,9 @@
     display: flex;
     justify-content: center;
     align-items: end;
+    position: relative;
+    z-index: 1;
+    height: 100%;
 }
 #scrolldown {
     font-family: "Andada Pro";
@@ -94,12 +117,14 @@
     border-radius: 100px;
     border: 2px solid white;
     background: transparent;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateX(25px);
     color: white;
     font-size: 30px;
     padding-bottom: 6px;
     padding-left: 9px;
     transition: 0.2s;
+    position: absolute;
+    z-index: 3;
 }
 #scrolldown:hover {
     background: white;
@@ -160,9 +185,30 @@
     cursor: pointer;
 }
 
+#landingarrow {
+    font-family: "Andada Pro";
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 1px;
+    filter: opacity(0%);
+    transition: 0.2s;
+}
+#indexbutton:hover #landingarrow {
+    filter: opacity(100%);
+    margin-left: 10px;
+}
+#aboutbutton:hover #landingarrow {
+    filter: opacity(100%);
+    margin-left: 10px;
+}
+#workbutton:hover #landingarrow {
+    filter: opacity(100%);
+    margin-left: 10px;
+}
+
 
 #about{
-    height: 550px;
+    height: 750px;
     position: relative;
     z-index: 1;
     width: 90%;
@@ -173,18 +219,26 @@
 }
 #about-left {
     width: 100px;
-    height: 550px;
+    height: 100%;
     border-right: 2px solid white;
 }
 #about-content {
     width: 80%;
-
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 #aboutme {
     font-family: "Rozha One";
     color: white;
     font-size: 75px;
+    margin-top: -100px;
     padding-left: 100px;
+    height: 80px;
 }
 #about-text {
     margin-top: -50px;
@@ -194,8 +248,9 @@
 #workline {
     width: 800px;
     border-top: 2px solid white;
-    margin-top: 100px;
-    height: 100px;
+    margin-top: 125px;
+    position: absolute;
+    bottom: 100px;
 }
 
 #work {
@@ -225,6 +280,7 @@
     height: 700px;
     object-fit: cover;
     object-position: center;
+    transition: 0.2s;
 }
 #work-right {
     width: 50%;
@@ -237,6 +293,7 @@
     font-size: 100px;
     height: 50px;
     margin-top: 0px;
+    transition: 0.2s;
 }
 
 .link {
@@ -251,27 +308,36 @@
 .linktext {
     background: linear-gradient( to right, var(--dtext), var(--dtext), var(--o), var(--p));
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 300% 100%;
     transition: 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 .linkarrow {
     font-family: "Andada Pro";
-    margin-left: 10px;
+    margin-left: -10px;
     color: var(--dtext);
+    filter: opacity(0%);
     transition: 0.2s;
 }
 
 .link:hover .linktext {
     background-position: top left 100%;
+    border-bottom: 2px solid white;
     cursor: pointer;
+}
+#linktext1 {
+    background-position: top left 100%;
 }
 .link:hover {
     cursor: pointer;
 }
 .link:hover .linkarrow {
     color: white;
+    filter: opacity(100%);
+    margin-left: 10px;
 }
 
 
