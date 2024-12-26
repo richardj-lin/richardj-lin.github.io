@@ -1,0 +1,112 @@
+body {
+    overflow: hidden;
+    background: var(--darkblue);
+}
+
+.all {
+    background: var(--newwhite);
+}
+
+#menu-home, #menu-about, #menu-projects {
+    color: var(--darknavy);
+}
+#menu-home:hover, #menu-about:hover, #menu-projects:hover {
+    color: var(--lightviolet);
+    cursor: pointer;
+}
+
+#pfplines3, #pfplines3-2 {
+    position: absolute;
+    transform: rotate(-25deg);
+    width: 70vw;
+    height: 500px;
+    right: -200px;
+    bottom: -230px;
+    pointer-events: none;
+    animation: pfplines3 4s infinite;
+}
+#pfplines3-2 {
+    left: -200px;
+    bottom: -270px;
+    pointer-events: none;
+    transform:rotateY(180deg) rotate(-10deg);
+    animation: pfplines3-2 7s infinite;
+}
+
+@keyframes pfplines3 {
+    0% {width: 70vw; height: 500px; transform: rotate(-25deg);}
+    30% {width: 76vw; height: 550px; transform: rotate(-27deg)}
+    60% {width: 73vw;}
+    100% {width: 70vw; height: 500px; transform: rotate(-25deg) }
+}
+
+@keyframes pfplines3-2 {
+    0% {width: 70vw; height: 500px; transform: rotateY(180deg) rotate(-10deg);}
+    30% {width: 76vw; height: 550px; transform: rotateY(180deg) rotate(-12deg)}
+    60% {width: 73vw;}
+    100% {width: 70vw; height: 500px; transform: rotateY(180deg) rotate(-10deg) }
+}
+
+#projects-content {
+    width: 95%;
+}
+
+#projects-title {
+    font-family: "Climate Crisis";
+    font-size: var(--largeheader);
+    text-transform: uppercase;
+    color: var(--darkblue);
+    margin-bottom: 25px;
+}
+
+#projectdiv, #project2div {
+    display: flex;
+    justify-content: start;
+    height: 100px;
+    margin: 0;
+}
+
+#project-number {
+    font-family: "Climate Crisis";
+    font-size: var(--bigheader);
+    height: 100px;
+    width: 50px;
+    margin-top: 0px;
+    margin-right: 50px;
+    color: var(--darkblue);
+}
+
+#project1, #project2 {
+    font-family: "Climate Crisis";
+    color: var(--darknavy);
+    font-size: var(--bigheader);
+    margin: 0;
+    z-index: 3;
+    transition: 0.2s;
+}
+#project2div {
+    width: 100%;
+    margin-top: -30px;
+}
+#project1-arrow, #project2-arrow {
+    font-family: "Climate Crisis";
+    color: var(--darknavy);
+    font-size: var(--bigheader);
+    margin: 0;
+    margin-left: 0px;
+    opacity: 0%;
+    width: 0px;
+    transition: 0.2s;
+    
+}
+#project1:hover, #project2:hover {
+    cursor: pointer;
+    color: var(--lightviolet);
+}
+#project1:hover + #project1-arrow, #project2:hover + #project2-arrow {
+    cursor: pointer;
+    margin-left: 15px;
+    opacity: 100%;
+    width: 50px;
+    color: var(--lightviolet);
+}

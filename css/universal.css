@@ -1,34 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Rozha+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Climate+Crisis&display=swap');
 
 :root {
-    --bg: #213340;
-    --p: #8489E6;
-    --o: #DF9E61;
-    --text: #DBDBDB;
-    --dtext: #536878;
-    --check: #82ffcf;
+    --darknavy: #282B3C;
+    --darkblue: #2941C9;
+    --lightviolet: #8A9BFF;
+    --lighterviolet: #CED5FC;
+    --lighttext: #8F8F8F;
+    --darktext: #5B5B5B;
+    --newwhite: #eeeeee;
+    --beigeyellow: #FFF2CF;
+    --coral: #FFA4A4;
+    --check: rgb(0, 179, 111);
+    --hugeheader: 150px;
+    --largeheader: 90px;
+    --biggerheader: 70px;
+    --bigheader: 50px;
+    --smallheader: 22px;
+    --text: 18px;
+    --textheight: 40px;
+    --textheight1: 25px;
 }
-html {
-    scroll-behavior: smooth;
-}
+
 body {
-    margin: 0;
-    padding: 0;
-}
-html, body {
-    background-color: var(--bg);
-    overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-::-webkit-scrollbar-thumb {
-    background: white;
+    background: var(--darknavy);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
 }
 
+.all {
+    position: absolute;
+    height: 95%;
+    width: 98%;
+    top: 2.5%;
+    border-radius: 20px;
+    z-index: -100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+#menu-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu-home, #menu-about, #menu-projects {
+    font-family: "Climate Crisis";
+    color: var(--darknavy);
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: var(--smallheader);
+    border-bottom: 4px solid transparent;
+    transition: 0.2s;
+}
+#menu-home:hover, #menu-about:hover, #menu-projects:hover {
+    color: var(--darkblue);
+    cursor: pointer;
+}
+
+
+#menu-burger {
+    display: none;
+}
+
+#overlay-menu {
+    margin-top: -50px;
+    opacity: 0;
+    width: 800px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: fixed;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background: var(--newwhite);
+    transition: 0.2s;
+}
 

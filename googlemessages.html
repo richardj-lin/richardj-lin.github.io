@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LIN &lt;/Design&gt;</title>
+        <link rel='icon' href="./images/pfp.png">
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/googlemessages.css">
+    </head>
+    <body>
+        <div class="all">
+            <div id="menu">
+                <div id="menu-links">
+                    <span id="menu-home" onclick="transitionToPage('./index.html')">Home</span>
+                    <span id="menu-about" onclick="transitionToPage('./about.html')">About</span>
+                    <span id="menu-projects" onclick="transitionToPage('./projects.html')">Projects</span>
+                </div>
+                <div id="menu-burger">
+                    <div id="menu-burger-1"></div>
+                    <div id="menu-burger-2"></div>
+                    <div id="menu-burger-3"></div>
+                </div>
+            </div>
+
+            <div id="overlay-menu">
+                <div id="menu-links">
+                    <span id="menu-home" onclick="transitionToPage('./index.html')">Home</span>
+                    <span id="menu-about" onclick="transitionToPage('./about.html')">About</span>
+                    <span id="menu-projects" onclick="transitionToPage('./projects.html')">Projects</span>
+                </div>
+                <div id="menu-burger">
+                    <div id="menu-burger-1"></div>
+                    <div id="menu-burger-2"></div>
+                    <div id="menu-burger-3"></div>
+                </div>
+            </div>
+
+            <div id="top-content">
+                <img id="top-logo" src="./images/google-mockups/googlemessages.png">
+                <p id="top-title">Google<br>Messages</p>
+                <p id="top-desc">Adding Video Calls</p>
+            </div>
+        </div>
+
+        <div class="all1">
+            
+            <p class="titles">Background</p>
+            <p class="text">This project was conducted as a part of the University of North Carolina at Chapel Hill’s App Team Carolina student organization UX/UI Bootcamp final project. 
+                <br><br>
+                I chose an existing mobile application, and a feature to add. I chose to add integrated video calling to Google Messages, before it was implemented. </p>
+
+            <p class="titles">Competitive Analysis</p>
+            <p class="text" id="subtitle">(Click to open in new tab)</p>
+            <div id="img-holder">
+                <img id="comp-img" src="./images/google-mockups/competitive-analysis.png" onclick="window.open('./images/google-mockups/competitive-analysis.png', '_blank');">
+            </div>
+            <div id="care">
+                <p id="care-title">Why Should Google Care?</p>
+                <p id="care-text">
+                    Many other messaging applications have Integrated Video Calls. Google Messages does not, which can hinder users from using the 
+                    application for the lack of this feature. They may be more prone to switch to something like WhatsApp, which is slightly more 
+                    inconvenient for users because it does not work with SMS/MMS/RCS messaging.
+                </p>
+                <img id="pfplines2" src="./images/pfplines2.png">
+            </div>
+
+            <p class="titles">User Personas</p>
+            <p class="text" id="subtitle">Based on interviews conducted with Google Messages users (click to open in new tab)</p>
+            <div id="img-holder">
+                <img id="user" src="./images/google-mockups/user1.png" onclick="window.open('./images/google-mockups/user1.png', '_blank');">
+                <img id="user" src="./images/google-mockups/user2.png" onclick="window.open('./images/google-mockups/user2.png', '_blank');">
+            </div>
+
+            <p class="titles"><span style="color: var(--darkblue)">Google Messages</span>:<br>Information Architecture</p>
+            <p class="text" id="subtitle">(Click to open in new tab)</p>
+            <div id="img-holder">
+                <img src="./images/google-mockups/information-architecture.png" id="infoarchitecture-img" onclick="window.open('./images/google-mockups/information-architecture.png', '_blank');">
+            </div>
+
+            <p class="titles">Initial Wireframes</p>
+            <div id="wireframes">
+                <div id="mockup">
+                    <img id="wireframe-img" src="./images/google-mockups/wireframe1.png" onclick="window.open('./images/google-mockups/wireframe1.png', '_blank');">
+                    <p class="text" id="mockup-desc" style="color: var(--lighttext)">View 1</p>
+                </div>
+                <div id="mockup">
+                    <img id="wireframe-img1" src="./images/google-mockups/wireframe2.png" onclick="window.open('./images/google-mockups/wireframe2.png', '_blank');">
+                    <p class="text" id="mockup-desc" style="color: var(--lighttext)">View 2</p>
+                </div>
+            </div>
+
+            <p class="titles" style="color: var(--darkblue)">Mockups</p>
+            <div id="mockup-section">
+                <p id="mockup-header">Homepage: <br>Added Call Swipe Action (left) </p>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/1-original.png" onclick="window.open('./images/google-mockups/1-original.png', '_blank');">
+                    <p class="text" id="mockup-desc">Original</p>
+                </div>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/1-mockup.png" onclick="window.open('./images/google-mockups/1-mockup.png', '_blank');">
+                    <p class="text" id="mockup-desc">Mockup</p>
+                </div>
+            </div>
+            <div id="mockup-section">
+                <p id="mockup-header">Homepage: <br>Added Call Swipe Action (right) </p>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/2-original.png" onclick="window.open('./images/google-mockups/2-original.png', '_blank');">
+                    <p class="text" id="mockup-desc">Original</p>
+                </div>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/2-mockup.png" onclick="window.open('./images/google-mockups/2-mockup.png', '_blank');">
+                    <p class="text" id="mockup-desc">Mockup</p>
+                </div>
+            </div>
+            <div id="mockup-section">
+                <p id="mockup-header">Homepage: <br>Contact Pop-up </p>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/3-original.png" onclick="window.open('./images/google-mockups/3-original.png', '_blank');">
+                    <p class="text" id="mockup-desc">Original</p>
+                </div>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/3-mockup.png" onclick="window.open('./images/google-mockups/3-mockup.png', '_blank');">
+                    <p class="text" id="mockup-desc">Mockup</p>
+                </div>
+            </div>
+            <div id="mockup-section">
+                <p id="mockup-header">Texting: <br>Video Call Embeds</p>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/4-original.png" onclick="window.open('./images/google-mockups/4-original.png', '_blank');">
+                    <p class="text" id="mockup-desc">Original</p>
+                </div>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/4-mockup.png" onclick="window.open('./images/google-mockups/4-mockup.png', '_blank');">
+                    <p class="text" id="mockup-desc">Mockup</p>
+                </div>
+            </div>
+            <div id="mockup-section">
+                <p id="mockup-header">Clicking on a Video Call Button + Pending Call</p>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/5-original.png" onclick="window.open('./images/google-mockups/5-original.png', '_blank');">
+                    <p class="text" id="mockup-desc">Original</p>
+                </div>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/5-mockup.png" onclick="window.open('./images/google-mockups/5-mockup.png', '_blank');">
+                    <p class="text" id="mockup-desc">Mockup</p>
+                </div>
+            </div>
+            <div id="mockup-section">
+                <p id="mockup-header">Video Call Screens</p>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/6-view1.png" onclick="window.open('./images/google-mockups/6-view1.png', '_blank');">
+                    <p class="text" id="mockup-desc">View 1</p>
+                </div>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/6-view2.png" onclick="window.open('./images/google-mockups/6-view2.png', '_blank');">
+                    <p class="text" id="mockup-desc">View 2</p>
+                </div>
+            </div>
+            <div id="mockup-section">
+                <p id="mockup-header">Video Call: Mini Overlay</p>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/7-view1.png" onclick="window.open('./images/google-mockups/7-view1.png', '_blank');">
+                    <p class="text" id="mockup-desc">Mockup (overlay not-selected)</p>
+                </div>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/7-view2.png" onclick="window.open('./images/google-mockups/7-view2.png', '_blank');">
+                    <p class="text" id="mockup-desc">Mockup (overlay selected)</p>
+                </div>
+            </div>
+            <div id="mockup-section">
+                <p id="mockup-header">Edit Swipe Actions Options</p>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/8-original.png" onclick="window.open('./images/google-mockups/8-original.png', '_blank');">
+                    <p class="text" id="mockup-desc">Original</p>
+                </div>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/8-mockup.png" onclick="window.open('./images/google-mockups/8-mockup.png', '_blank');">
+                    <p class="text" id="mockup-desc">Mockup</p>
+                </div>
+            </div>
+            <div id="mockup-section">
+                <p id="mockup-header">Edit Swipe Actions Options: Call + Video Call Option Previews</p>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/9-original.png" onclick="window.open('./images/google-mockups/9-original.png', '_blank');">
+                    <p class="text" id="mockup-desc">Original</p>
+                </div>
+                <div id="mockup">
+                    <img id="mockup-img" src="./images/google-mockups/9-mockup.png" onclick="window.open('./images/google-mockups/9-mockup.png', '_blank');">
+                    <p class="text" id="mockup-desc">Mockup</p>
+                </div>
+            </div>
+
+
+            <p id="nextproject">View next project:</p>
+            <div id="projectdiv">
+                <span class="titles" id="finaltransition" onclick="transitionToPage('./walmart.html')">Walmart</span>
+                <p id="project1-arrow">→</p>
+            </div>
+            <div id="lastlines">
+                <img id="pfplines3" src="./images/pfplines3.png">
+                <img id="pfplines3-2" src="./images/pfplines3.png">
+            </div>
+        </div>
+        
+
+
+
+    </body>
+    <script src="./js/universal.js"></script>
+</html>

@@ -1,0 +1,417 @@
+body {
+    background: var(--darkblue);
+    overflow-x: hidden;
+}
+
+.all {
+    background: var(--newwhite);
+    z-index: 1000;
+}
+
+#menu-home, #menu-about, #menu-projects {
+    color: var(--darknavy);
+}
+#menu-home:hover, #menu-about:hover, #menu-projects:hover {
+    color: var(--lightviolet);
+    cursor: pointer;
+}
+
+
+#walmart-content {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projects-title {
+    font-family: "Climate Crisis";
+    font-size: var(--largeheader);
+    text-transform: uppercase;
+    color: var(--darkblue);
+    margin-bottom: 25px;
+}
+
+#walmart-logo {
+    width: 125px;
+    margin-top: 100px;
+}
+
+#walmart-title {
+    margin-top: 0px;
+    font-size: var(--largeheader);
+    text-transform: uppercase;
+    font-family: "Climate Crisis";
+    color: var(--darkblue);
+}
+#walmart-desc {
+    font-size: var(--text);
+    font-family: "Alata";
+    color: var(--darktext);
+    margin-top: -75px;
+}
+
+.all1 {
+    background: var(--newwhite);
+    padding-bottom: 0px;
+    width: 98%;
+    margin-top: 100vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#background-problem {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#background, #problem {
+    height: 375px;
+    width: 40%;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+}
+#problem {
+    background: var(--darknavy);
+}
+
+#background-title, #problem-title {
+    font-size: var(--bigheader);
+    font-family: "Climate Crisis";
+    color: var(--darknavy);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+#problem-title {
+    color: var(--beigeyellow);
+}
+#background-text, #problem-statdesc {
+    color: var(--darktext);
+    font-size: var(--text);
+    font-family: "Alata";
+}
+#problem-statdesc {
+    color: var(--lighttext);
+    text-align: center;
+    margin-top: 0px;
+}
+
+#problem-statistics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#problem-stats {
+    width: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#problem-statnum {
+    font-size: var(--bigheader);
+    font-family: "Climate Crisis";
+    width: 160px;
+    height: 70px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background: -webkit-linear-gradient(45deg, var(--lightviolet), var(--coral));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#conclusion-statement {
+    color: var(--darktext);
+    font-size: var(--text);
+    font-family: "Alata";
+    width: 90%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+#care {
+    background: var(--darknavy);
+    width: 95%;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#coraltext {
+    color: var(--coral);
+}
+#care-title {
+    font-size: var(--bigheader);
+    font-family: "Climate Crisis";
+    color: var(--beigeyellow);
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+#care-text {
+    margin-left: 50px;
+    margin-top: -25px;
+    font-size: var(--text);
+    width: 75%;
+    line-height: var(--textheight);
+    font-family: "Alata";
+    color: var(--lighttext);
+}
+#pfplines2 {
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 700px;
+    right: -275px;
+    top: 250px;
+    animation: pfplines2 4s infinite;
+}
+@keyframes pfplines2 {
+    0% {width: 700px; transform: rotate(-90deg);}
+    30% {width: 710px; transform: rotate(-92deg)}
+    60% {width: 717px;}
+    100% {width: 700px; transform: rotate(-90deg) }
+}
+
+.titles {
+    font-family: "Climate Crisis";
+    font-size: var(--bigheader);
+    text-transform: uppercase;
+    color: var(--darknavy);
+    text-align: left;
+    width: 90%;
+    margin-top: 100px;
+}
+#users-subtitle, #solution-text {
+    font-family: "Alata";
+    font-size: var(--text);
+    color: var(--darktext);
+    text-align: left;
+    width: 90%;
+    margin-top: -40px;
+}
+
+#users{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin-top: 150px;
+}
+
+#profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -75px;
+    height: 100px;
+
+}
+#person-img {
+    width: 250px;
+    position: absolute;
+    filter: saturate(0) brightness(70%);
+    z-index: 1;
+}
+#pfplines-img {
+    width: 200px;
+    z-index: 0;
+    position: absolute;
+    transform: rotate(270deg);
+    margin-right: 70px;
+    margin-bottom: 55px;
+}
+
+.user {
+    background: var(--darknavy);
+    border: 4px solid var(--coral);
+    width: 275px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+#name {
+    font-family: "Climate Crisis";
+    color: var(--newwhite);
+    font-size: var(--smallheader);
+    margin-top: 50px;
+}
+#age {
+    font-family: "Climate Crisis";
+    color: var(--coral);
+    font-size: var(--text);
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+#needs {
+    font-family: "Climate Crisis";
+    color: var(--newwhite);
+    font-size: var(--smallheader);
+}
+#desc, #needs-text {
+    font-family: "Alata";
+    font-size: var(--text);
+    color: var(--lighttext);
+    line-height: var(--textheight1);
+    margin-top: -20px;
+}
+
+#solution-text {
+    line-height: var(--textheight);
+}
+
+.mockup-section {
+    background: var(--darknavy);
+    width: 95%;
+    border-radius: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 25px;
+    justify-content: start;
+}
+.mockup-header {
+    margin-left: 50px;
+    color: var(--beigeyellow);
+    font-family: "Climate Crisis";
+    font-size: var(--smallheader);
+}
+.mockup-images {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.mock-up {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+#mockup-img {
+    width: 100%;
+    transition: 0.2s;
+}
+#mockup-img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#mockup-desc {
+    text-align: center;
+    font-family: "Alata";
+    font-size: var(--text);
+    color: var(--lighttext);
+}
+
+#nextproject {
+    font-family: "Climate Crisis";
+    font-size: var(--smallheader);
+    color: var(--darknavy);
+    width: 90%;
+    margin-top: 100px;
+
+}
+
+#projectdiv {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 300px;
+    margin: 0;
+    width: 90%;
+    margin-top: -20px;
+    z-index: 1;
+}
+
+
+#finaltransition {
+    color: var(--darkblue);
+    transition: 0.2s;
+    height: 75px;
+    position: static;
+    margin: 0;
+    font-size: var(--biggerheader);
+    width: auto;
+}
+
+#project1-arrow {
+    font-family: "Climate Crisis";
+    color: var(--darknavy);
+    font-size: var(--biggerheader);
+    margin: 0;
+    margin-left: 0px;
+    opacity: 0%;
+    width: 0px;
+    height: 75px;
+    padding-bottom: 10px;
+    transition: 0.2s; 
+}
+#finaltransition:hover {
+    cursor: pointer;
+    color: var(--lightviolet);
+}
+#finaltransition:hover + #project1-arrow {
+    cursor: pointer;
+    margin-left: 15px;
+    opacity: 100%;
+    width: 50px;
+    color: var(--lightviolet);
+}
+
+#lastlines {
+    position: relative;
+    width: 120%;
+    overflow: hidden;
+    height: 500px;
+    margin-top: -350px;
+    margin-bottom: -10px;
+    z-index: 0;
+}
+
+#pfplines3, #pfplines3-2 {
+    position: absolute;
+    transform: rotate(-25deg);
+    width: 70vw;
+    height: 500px;
+    right: -80px;
+    bottom: -160px;
+    pointer-events: none;
+    animation: pfplines3 4s infinite;
+}
+#pfplines3-2 {
+    left: -80px;
+    bottom: -200px;
+    pointer-events: none;
+    transform:rotateY(180deg) rotate(-10deg);
+    animation: pfplines3-2 7s infinite;
+}
+
+@keyframes pfplines3 {
+    0% {width: 70vw; height: 500px; transform: rotate(-25deg);}
+    30% {width: 76vw; height: 550px; transform: rotate(-27deg)}
+    60% {width: 73vw;}
+    100% {width: 70vw; height: 500px; transform: rotate(-25deg) }
+}
+
+@keyframes pfplines3-2 {
+    0% {width: 70vw; height: 500px; transform: rotateY(180deg) rotate(-10deg);}
+    30% {width: 76vw; height: 550px; transform: rotateY(180deg) rotate(-12deg)}
+    60% {width: 73vw;}
+    100% {width: 70vw; height: 500px; transform: rotateY(180deg) rotate(-10deg) }
+}

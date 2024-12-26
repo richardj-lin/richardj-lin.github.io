@@ -1,0 +1,80 @@
+body {
+    overflow: hidden;
+    background: var(--beigeyellow);
+}
+
+.all {
+    background: var(--darknavy);
+}
+
+#menu-home, #menu-about, #menu-projects {
+    color: var(--beigeyellow);
+}
+#menu-home:hover, #menu-about:hover, #menu-projects:hover {
+    color: var(--lightviolet);
+    cursor: pointer;
+}
+
+#pfplines2 {
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 100vh;
+    height: 500px;
+    right: -170px;
+    top: 120px;
+    pointer-events: none;
+    animation: pfplines2 4s infinite;
+}
+@keyframes pfplines2 {
+    0% {width: 100vh; height: 500px; transform: rotate(-90deg);}
+    30% {width: 105vh; height: 550px; transform: rotate(-92deg)}
+    60% {width: 106vh;}
+    100% {width: 100vh; height: 500px; transform: rotate(-90deg) }
+}
+
+#about-content {
+    width: 95%;
+}
+
+#about-title {
+    font-family: "Climate Crisis";
+    font-size: var(--largeheader);
+    text-transform: uppercase;
+    color: var(--lighterviolet);
+}
+
+#about-text {
+    margin-top: -70px;
+    font-size: var(--text);
+    font-family: "Alata";
+    color: var(--lighttext);
+    width: 950px;
+}
+#viewprojectsdiv {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+#viewprojects {
+    color: var(--lightviolet);
+    font-size: var(--smallheader);
+    font-family: "Climate Crisis";
+    transition: 0.2s;
+}
+#viewprojects-arrow {
+    color: var(--lightviolet);
+    font-size: var(--smallheader);
+    font-family: "Climate Crisis";
+    margin-left: -20px;
+    opacity: 0;
+    transition: 0.2s;
+}
+#viewprojects:hover { 
+    color: var(--beigeyellow);
+    cursor: pointer;
+}
+#viewprojects:hover + #viewprojects-arrow { 
+    color: var(--beigeyellow);
+    margin-left: 15px;
+    opacity: 100;
+}
