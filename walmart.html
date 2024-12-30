@@ -9,15 +9,15 @@
     <body>
         <div class="all">
             <div id="menu">
+                <div onclick="menuOpen()" id="menu-burger">
+                    <div id="menu-burger-1"></div>
+                    <div id="menu-burger-2"></div>
+                    <div id="menu-burger-3"></div>
+                </div>
                 <div id="menu-links">
                     <span id="menu-home" onclick="transitionToPage('./index.html')">Home</span>
                     <span id="menu-about" onclick="transitionToPage('./about.html')">About</span>
                     <span id="menu-projects" onclick="transitionToPage('./projects.html')">Projects</span>
-                </div>
-                <div id="menu-burger">
-                    <div id="menu-burger-1"></div>
-                    <div id="menu-burger-2"></div>
-                    <div id="menu-burger-3"></div>
                 </div>
             </div>
 
@@ -27,12 +27,8 @@
                     <span id="menu-about" onclick="transitionToPage('./about.html')">About</span>
                     <span id="menu-projects" onclick="transitionToPage('./projects.html')">Projects</span>
                 </div>
-                <div id="menu-burger">
-                    <div id="menu-burger-1"></div>
-                    <div id="menu-burger-2"></div>
-                    <div id="menu-burger-3"></div>
-                </div>
             </div>
+
 
             <div id="walmart-content">
                 <img id="walmart-logo" src="./images/walmart-mockups/walmart.png">
@@ -56,7 +52,7 @@
                             <p id="problem-statnum">18%</p>
                             <p id="problem-statdesc">increase in technology ownership among elderly individuals in the last 4 years.</p>
                         </div>
-                        <div id="problem-stats">
+                        <div id="problem-stats1">
                             <p id="problem-statnum">57%</p>
                             <p id="problem-statdesc">of elderly individuals over the age of 65 reported finding online shopping sites difficult to navigate.</p>
                         </div>
@@ -235,6 +231,6 @@
 
 
     </body>
-    <script src="./js/index.js"></script>
+    <script src="./js/walmart.js"></script>
     <script src="./js/universal.js"></script>
 </html>

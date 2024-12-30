@@ -107,7 +107,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-#problem-stats {
+#problem-stats, #problem-stats1 {
     width: 250px;
     display: flex;
     justify-content: start;
@@ -257,6 +257,7 @@ body {
 #needs {
     font-family: "Climate Crisis";
     color: var(--newwhite);
+    text-transform: uppercase;
     font-size: var(--smallheader);
 }
 #desc, #needs-text {
@@ -414,4 +415,170 @@ body {
     30% {width: 76vw; height: 550px; transform: rotateY(180deg) rotate(-12deg)}
     60% {width: 73vw;}
     100% {width: 70vw; height: 500px; transform: rotateY(180deg) rotate(-10deg) }
+}
+
+@media only screen and (max-width: 1024px) {
+    #overlay-menu, #menu-links, #menu-burger {
+        position: fixed;
+    }
+    #menu-burger {
+        background: var(--newwhite);
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+    #menu-burger-1, #menu-burger-2, #menu-burger-3  {
+        background: var(--darknavy);
+    }
+    #menu-links {
+        background: var(--newwhite);
+        border-left-color: var(--darkblue);
+    }
+    #walmart-logo {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    #walmart-content {
+        overflow: hidden;
+        padding-top: 400px;
+    }
+    .all1 {
+        position: relative;
+        z-index: 0;
+        width: 95%;
+        overflow: hidden;
+    }
+    #walmart-title {
+        text-align: center;
+        width: 100%;
+    }
+    #background-problem {
+        flex-direction: column;
+        width: 90%;
+    }
+    #background, #problem {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+    #problem {
+        width: 90%;
+        margin-top: 300px;
+        height: 1000px;
+        margin-bottom: -100px;
+    }
+    #problem-statistics {
+        flex-direction: column;
+    }
+    #problem-stats {
+        width: 90%;
+        margin-top: 25px;
+    }
+    #problem-stats1 {
+        width: 90%;
+        margin-top: 150px;
+    }    
+
+    #problem-statnum {
+        font-size: var(--largeheader);
+        height: auto;
+        width: auto;
+    }
+    #problem-statdesc {
+        width: 100%;
+        font-size: var(--text);
+    }
+    
+    #conclusion-statement {
+        margin-top: 200px;
+        text-align: center;
+        width: 80%;
+    }
+    #care {
+        margin-top: 75px;
+        width: 90%;
+    }
+    #care-text {
+        width: 85%;
+        font-size: var(--text);
+        text-align: left;
+        padding-left: 25px;
+    }
+    #care-title {
+        text-align: center;
+        margin-left: 0;
+    }
+    #pfplines2 {
+        display: none;
+    }
+    .titles {
+        width: 90%;
+        text-align: center;
+    }
+    #users-subtitle {
+        width: 80%;
+        text-align: center;
+        margin-bottom: -150px;
+    }
+    #users {
+        flex-direction: column;
+    }
+    .user {
+        width: 90%;
+        margin-top: 400px;
+        border: 10px solid var(--coral);
+        border-radius: 30px;
+    }
+    #profile {
+        margin-top: -150px;
+        margin-bottom: 0;
+    }
+    #person-img {
+        width: 500px;
+    }
+    #pfplines-img {
+        width: 400px;
+        margin-right: 150px;
+    }
+    #name {
+        margin-top: 175px;
+        width: 85%;
+        padding-left: 25px;
+    }
+    #age {
+        margin-top: -40px;
+        margin-bottom: 50px;
+        width: 85%;
+        padding-left: 25px;
+    }
+    #needs {
+        width: 85%;
+        padding-left: 25px;
+    }
+    #desc, #needs-text {
+        width: 85%;
+        padding-left: 25px;
+    }
+    #solution-text {
+        width: 85%;
+        text-align: center;
+    }
+    .mockup-images {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .mock-up {
+        width: 95%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #nextproject {
+        text-align: center;
+    }
+    #lastlines {
+        margin-top: -200px;
+    }
 }

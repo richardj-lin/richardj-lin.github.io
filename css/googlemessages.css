@@ -324,3 +324,80 @@ body {
     60% {width: 73vw;}
     100% {width: 70vw; height: 500px; transform: rotateY(180deg) rotate(-10deg) }
 }
+
+@media only screen and (max-width: 1024px) {
+    #overlay-menu, #menu-links, #menu-burger {
+        position: fixed;
+    }
+    #menu-burger {
+        background: var(--newwhite);
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+    #menu-burger-1, #menu-burger-2, #menu-burger-3  {
+        background: var(--darknavy);
+    }
+    #menu-links {
+        background: var(--newwhite);
+        border-left-color: var(--darkblue);
+    }
+    #top-logo {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    #top-content {
+        overflow: hidden;
+        padding-top: 400px;
+    }
+    .all1 {
+        position: relative;
+        z-index: 0;
+        width: 95%;
+        overflow: hidden;
+    }
+    #top-title {
+        text-align: center;
+        width: 100%;
+        font-size: var(--largeheader);
+    }
+    #pfplines2 {
+        display: none;
+    }
+    .titles, #care-title, .text {
+        text-align: center;
+    }
+    #care-title {
+        padding: 0;
+        margin-left: 0;
+    }
+    #care-text {
+        width: 85%;
+        text-align: center;
+    }
+    #mockup-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #mockup {
+        width: 90%;
+        height: auto;
+        margin-top: 50px;
+    }
+    #mockup-desc {
+        width: 90%;
+        font-size: var(--text);
+    }
+    #mockup-header {
+        width: 90%;
+        text-align: center;
+    }
+    #mockup-img {
+        width: 90%;
+    }
+
+
+}
+
+

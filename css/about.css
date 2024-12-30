@@ -78,3 +78,53 @@ body {
     margin-left: 15px;
     opacity: 100;
 }
+
+@media only screen and (max-width: 1024px) {
+    #overlay-menu, #menu-links, #menu-burger {
+        position: fixed;
+    }
+    #menu-burger-1, #menu-burger-2, #menu-burger-3  {
+        background: var(--beigeyellow);
+    }
+    #menu-links {
+        background: var(--darknavy);
+        border-left-color: var(--beigeyellow);
+    }
+    #about-content {
+        margin-top: 200px;
+        position: relative;
+        z-index: 0;
+    }
+    #about-title {
+        text-align:center;
+    }
+    #about-text {
+        width: 100%;
+        text-align:center;
+    }
+    #viewprojectsdiv {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #pfplines2 {
+        position: absolute;
+        transform: rotate(0deg);
+        width: 120vw;
+        height: 350px;
+        top: 80vh;
+        right: -150px;
+        pointer-events: none;
+        animation: pfplines2 4s infinite;
+    }
+    @keyframes pfplines2 {
+        0% {width: 120vw; height: 350px; transform: rotate(0deg);}
+        30% {width: 125vw; height: 400px; transform: rotate(2deg)}
+        60% {width: 126vw;}
+        100% {width: 120vw; height: 350px; transform: rotate(0deg) }
+    }
+
+}
+
+
+

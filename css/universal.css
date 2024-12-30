@@ -3,13 +3,14 @@
 :root {
     --darknavy: #282B3C;
     --darkblue: #2941C9;
+    --darkblue1: #4b2acf;
     --lightviolet: #8A9BFF;
     --lighterviolet: #CED5FC;
     --lighttext: #8F8F8F;
     --darktext: #5B5B5B;
     --newwhite: #eeeeee;
     --beigeyellow: #FFF2CF;
-    --coral: #FFA4A4;
+    --coral: #ff7f7f;
     --check: rgb(0, 179, 111);
     --hugeheader: 150px;
     --largeheader: 90px;
@@ -28,6 +29,28 @@ body {
     opacity: 0;
     transition: opacity .5s;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--newwhite);
+    border-radius: 20px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--lightviolet);
+  }
 
 .all {
     position: absolute;
@@ -85,4 +108,88 @@ body {
     background: var(--newwhite);
     transition: 0.2s;
 }
+
+@media only screen and (max-width: 1024px) {
+    :root {
+        --hugeheader: 130px;
+        --largeheader: 100px;
+        --biggerheader: 90px;
+        --bigheader: 65px;
+        --smallheader: 50px;
+        --text: 40px;
+        --textheight: 70px;
+        --textheight1: 60px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .all {
+        height: 95%;
+        width: 95%;
+        left: 2.5%;
+        overflow: hidden;
+    }
+    #menu {
+        flex-direction: column;
+        align-items: end;
+        justify-content: start;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+    #menu-burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        margin-right: 25px;
+        margin-top: 50px;
+        position: relative;
+        transition: 0.2s;
+        z-index: 1000;
+    }
+    #menu-burger-1, #menu-burger-2, #menu-burger-3 {
+        width: 120px;
+        height: 20px;
+        border-radius: 25px;
+        background: var(--darknavy);
+        transition: 0.2s;
+    } 
+    #menu-burger-2, #menu-burger-3 {
+        margin-top: 15px;
+    }
+
+    #menu-links {
+        flex-direction: column;
+        align-items: end;
+        height: 120%;
+        background: var(--beigeyellow);
+        position: absolute;
+        top: -5%;
+        right: -75%;
+        width: 70%;
+        z-index: 801;
+        transition: 0.2s;
+        border-left: 10px solid var(--darknavy);
+    }
+    #menu-home {
+        margin-top: 700px;
+    }
+    #menu-home, #menu-about, #menu-projects {
+        color: var(--darknavy);
+        font-size: var(--bigheader);
+        text-align: right;
+    }
+    #menu-about, #menu-projects {
+        margin-top: 25px;
+    }
+
+
+
+}
+
 
