@@ -24,12 +24,13 @@ body {
     font-family: "Alata";
     font-size: var(--smallheader);
     margin-top: -140px;
-    color: var(--darknavy);
+    color: var(--darkblue);
+    font-weight: normal;
 }
 #project-header {
     text-align: right;
     font-family: "Climate Crisis";
-    color: var(--darknavy);
+    color: var(--darkblue);
     font-size: var(--smallheader);
     margin: 0;
 }
@@ -41,7 +42,7 @@ body {
 #project1, #project2 {
     text-align: right;
     font-family: "Climate Crisis";
-    color: var(--darkblue);
+    color: var(--darknavy);
     font-size: var(--bigheader);
     height: 60px;
     margin: 0;
@@ -176,10 +177,10 @@ body {
     }
     
     #pfplines {
-        top: 300px;
+        top: 275px;
         width: 440px;
         height: 400px;
-        left: 210px;
+        left: 200px;
         animation: pfplines 4s infinite;
     }
     @keyframes pfplines {
