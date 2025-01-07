@@ -278,7 +278,7 @@ body {
     border-radius: 15px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 25px;
+    margin-top: 225px;
     justify-content: start;
 }
 .mockup-header {
@@ -507,6 +507,9 @@ body {
     #care-title {
         text-align: center;
         margin-left: 0;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
     #pfplines2 {
         display: none;
