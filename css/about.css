@@ -20,7 +20,7 @@ body {
     transform: rotate(-90deg);
     width: 100vh;
     height: 500px;
-    right: -170px;
+    right: -250px;
     top: 120px;
     pointer-events: none;
     animation: pfplines2 4s infinite;

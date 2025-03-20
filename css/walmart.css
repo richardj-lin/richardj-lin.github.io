@@ -278,7 +278,6 @@ body {
     border-radius: 15px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 225px;
     justify-content: start;
 }
 .mockup-header {
@@ -565,6 +564,9 @@ body {
     #solution-text {
         width: 85%;
         text-align: center;
+    }
+    .mockup-section {
+        margin-top: 225px;
     }
     .mockup-images {
         flex-direction: column;
